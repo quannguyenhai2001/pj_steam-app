@@ -1,0 +1,211 @@
+.game-detail {
+    color: #d4d5d6;
+    // background: url("/assets/img/backgroundgamedetail.jpg") no-repeat;
+    // min-height: 80rem;
+    // background-size: cover;
+    // background-position: center;
+    min-height:80rem;
+    background-color: #23354d;
+    padding-bottom: 2rem;
+ 
+}
+.game-detail__nav {
+    padding-top: 3rem;
+}
+.game-detail__title {
+    margin: 2rem 0;
+    font-size: 2.8rem;
+    color: antiquewhite;
+}
+.detail-logo {
+    width: 100%;
+    height: 53.7rem;
+}
+.detail-logo img {
+    width: 100%;
+    height: 100%;
+}
+.detail-img {
+    width: 100%;
+}
+.detail-img img {
+    width: 100%;
+    height: 20rem;
+}
+.detail-text {
+    box-shadow: 5px 5px 10px #1f1f1f, -5px -5px 10px #232323;
+    margin-bottom: 10rem;
+}
+.detail-text__content {
+    padding: 0 2rem;
+    word-break:break-word;
+    
+}
+.detail-text__content p{
+  word-break:break-word;
+}
+.detail-middle > div {
+    margin-bottom: 2rem;
+    color: #719896;
+    cursor: pointer;
+}
+.detail-middle > div span {
+    color: #556772;
+}
+.detail-middle p {
+    margin: 1rem 0;
+    color: #a6d4df;
+}
+.detail-tag p {
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+    display: inline-block;
+}
+.detail-tag button {
+    z-index: 1;
+    position: relative;
+    font-size: inherit;
+    font-family: inherit;
+    color: white;
+    padding: 0.5em 1em;
+    outline: none;
+    border: none;
+    background-color: #263d50;
+    overflow: hidden;
+    cursor: pointer;
+}
+.detail-tag button::after {
+    content: "";
+    z-index: -1;
+    background-color: hsla(0, 0%, 100%, 0.2);
+    position: absolute;
+    top: -50%;
+    bottom: -50%;
+    width: 1.25em;
+    transform: translate3d(-525%, 0, 0) rotate(35deg);
+}
+
+.detail-tag button:hover::after {
+    transition: transform 0.45s ease-in-out;
+    transform: translate3d(200%, 0, 0) rotate(35deg);
+}
+.detail-buy {
+    width: 100%;
+    text-align: center;
+}
+.detail-buy button {
+    z-index: 1;
+    position: relative;
+    font-size: inherit;
+    font-family: inherit;
+    color: white;
+    padding: 1em 1em;
+    margin: 2rem;
+    outline: none;
+    border: none;
+    background: linear-gradient(145deg, #252525, #2c2c2c);
+    box-shadow: 2px 2px 5px #101010, -2px -2px 5px #424242;
+    overflow: hidden;
+    transition: color 0.4s ease-in-out;
+}
+.detail-buy button::before {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    bottom: 100%;
+    right: 100%;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    background-color: #3cefff;
+    transform-origin: center;
+    transform: translate3d(50%, 50%, 0) scale3d(0, 0, 0);
+    transition: transform 0.45s ease-in-out;
+}
+
+.detail-buy button:hover {
+    cursor: pointer;
+    color: #161616;
+}
+
+.detail-buy button:hover::before {
+    transform: translate3d(50%, 50%, 0) scale3d(20, 20, 20);
+}
+
+//search effect
+.game-detail-create-comment{
+    display: grid;
+    grid-template-columns: 1fr 28fr;
+    margin-bottom: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-detail-create-comment .game-detail-avatar{
+    width: 5rem;
+    height:5rem;
+    margin-right: 1rem;
+}
+.game-detail-create-comment .game-detail-avatar img{
+    width:100%;
+    height:100%;
+    border-radius:50rem;
+    
+}
+//input
+.game-detail-create-comment div {
+    position: relative;
+   height:2.5rem;
+  }
+  .game-detail-create-comment input {
+    width: 100%;
+    color: white;
+    font-size: inherit;
+    font-family: inherit;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-bottom-color: hsla(185, 100%, 62%, 0.2);
+  }
+  
+  .game-detail-create-comment  input:focus {
+    outline: none;
+  }
+  
+  .game-detail-create-comment input::placeholder {
+    color: hsla(0, 0%, 100%, 0.6);
+  }
+  
+  .game-detail-create-comment span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: #3cefff;
+    transform-origin: bottom right;
+    transform: scaleX(0);
+    transition: transform 0.5s ease;
+  }
+  
+  .game-detail-create-comment  input:focus ~ span {
+    transform-origin: bottom left;
+    transform: scaleX(1);
+  }
+
+  //
+.game-detail-btn-comment{
+    grid-column: 2/ 3;
+    margin-left:auto
+}
+.game-detail-btn-comment >.block{
+    opacity: 1;
+    visibility: visible;
+    
+}
+.game-detail-btn-comment > .none{
+    opacity: 0;
+    visibility: hidden
+}
+//
+
+

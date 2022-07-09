@@ -1,0 +1,36 @@
+.footer {
+    width: 100%;
+    min-height: 200px;
+    background-color: black;
+    margin-top: -280px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    padding: 2rem 0
+  }
+  .footer h3 {
+    color: rgb(83, 192, 244);
+  }
+  .footer button {
+    background-color: rgb(87, 111, 4);
+    color: white;
+    border: none;
+    border-radius: 3px;
+    width: 75px;
+    height: 40px;
+  }
+  .footer button:hover {
+    background-color: rgb(117, 148, 7);
+  }
+  .footer p {
+    color: white;
+  }
+  .under_footer {
+    height:12rem;
+    background-image: url("/assets/img/underfooter.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }

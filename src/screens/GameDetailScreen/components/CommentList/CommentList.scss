@@ -1,0 +1,149 @@
+.comment-each {
+    margin-bottom: 4rem;
+    display: grid;
+    grid-template-columns: 1fr 28fr;
+}
+//avatar
+.comment-each .comment-each-avatar {
+    width: 4.5rem;
+    height: 4.5rem;
+    margin-right: 1rem;
+}
+.comment-each .comment-each-avatar img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50rem;
+}
+//
+//content
+.comment-each .comment-each-content {
+    position: relative;
+    font-size:1.4rem;
+    font-weight:10
+}
+//title name
+.comment-each .comment-each-content_title {
+    margin-bottom: 0.3rem;
+    font-size:1.8rem;
+}
+//icon dot
+.comment-each .fa-ellipsis-v {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 2rem;
+    transform: translateY(-50%);
+    padding-bottom: 1rem;
+}
+//input
+.comment-each .comment-input-1 {
+    background-color: #23354d;
+    border: none;
+    color: white;
+}
+.comment-each .comment-content-box-input {
+    position: relative;
+   
+    width: 90%;
+    display: inline-block;
+}
+.comment-each-content input {
+    width: 100%;
+    color: white;
+    font-size: inherit;
+    font-family: inherit;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-bottom-color: hsla(185, 100%, 62%, 0.2);
+    word-wrap: break-word;
+    word-break: break-word;
+    overflow-y: auto;
+}
+
+.comment-each-content input:focus {
+    outline: none;
+}
+.comment-each-content .comment-content-box-input__span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #3cefff;
+    transform-origin: bottom right;
+    transform: scaleX(0);
+    transition: transform 0.5s ease;
+}
+.comment-each-content input:focus ~ .comment-content-box-input__span {
+    transform-origin: bottom left;
+    transform: scaleX(1);
+}
+
+//react
+.comment-content__react{
+    margin-top:1rem
+}
+.comment-content__react i{
+    margin-right:1rem;
+}
+.comment-content__react span{
+    cursor: pointer;
+}
+
+
+//box edit
+.comment-each-box .comment-each-box__content {
+    position: absolute;
+    font-size: 1.4rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    right: 50%;
+    top: 100%;
+    width: 10rem;
+    background-color: white;
+    color: black;
+    border-radius: 0.5rem;
+    box-shadow: 1px 1px 3px #050505, -1px -1px 3px #151515;
+    padding: 1rem 0;
+}
+.comment-each-box .comment-each-box__content li {
+    padding-left: 1rem;
+    cursor: pointer;
+}
+.comment-each-box .comment-each-box__content li:first-child {
+    padding-bottom: 1rem;
+}
+.comment-each-content__evaluate{
+    margin-left: 1rem;
+    cursor: pointer;
+}
+.display--none {
+    display: none;
+}
+.display--block {
+    display: block;
+}
+.comment-each .comment-each-box {
+    opacity: 0;
+    visibility: hidden;
+}
+.comment-each:hover .comment-each-box {
+    opacity: 1;
+    visibility: visible;
+}
+//
+
+
+
+//button edit
+.comment-each-content_button{
+    grid-column: 2/ 3;
+    margin-left: auto;
+    margin-right: 2rem;
+    margin-top: 1rem;
+}
+.comment-each-content_button button {
+    background-color: 
+    #1f2d3f
+}

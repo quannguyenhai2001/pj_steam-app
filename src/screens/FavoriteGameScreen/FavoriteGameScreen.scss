@@ -1,0 +1,122 @@
+
+// loading
+.boughtgame-loading {
+    height: 30rem;
+    box-shadow: none;
+    grid-column: 1/3;
+}
+.boughtgame-loading h3{
+    text-align: center;
+    font-size:3rem;
+    margin-top: 4rem;
+}
+
+.boughtgame-loading .boughtgame-loading-animation__load {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 5em;
+    margin: 0 auto;
+    margin-top:15rem
+  }
+  
+  .boughtgame-loading .boughtgame-loading-animation__load   span {
+    width: 0.7em;
+    height: 2em;
+    background-color: #3cefff;
+  }
+  
+  .boughtgame-loading .boughtgame-loading-animation__load  span:nth-of-type(1) {
+    animation: grow 1s -0.45s ease-in-out infinite;
+  }
+  
+  .boughtgame-loading .boughtgame-loading-animation__load  span:nth-of-type(2) {
+    animation: grow 1s -0.3s ease-in-out infinite;
+  }
+  
+  .carboughtgame-loading .boughtgame-loading-animation__load  span:nth-of-type(3) {
+    animation: grow 1s -0.15s ease-in-out infinite;
+  }
+  
+  .boughtgame-loading .boughtgame-loading-animation__load  span:nth-of-type(4) {
+    animation: grow 1s ease-in-out infinite;
+  }
+  
+  @keyframes grow {
+    0%,
+    100% {
+      transform: scaleY(1);
+    }
+    50% {
+      transform: scaleY(2);
+    }
+  }
+// 
+.boughtgame {
+    color: #b4d7eb;
+    background: url("/assets/img/backgroundgamedetail.jpg") no-repeat;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+.boughtgame-main {
+    padding: 0 10rem;
+}
+
+//title
+.boughtgame-main .title-general{
+    text-align: right;
+}
+//
+.boughtgame-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 2rem;    
+    grid-row-gap: 2rem;
+    margin-bottom: 10rem;
+}
+.boughtgame-list .boughtgame-each-game {
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    background-color: #1a2a3b;
+    border-radius:1rem;
+    overflow: hidden;
+    will-change: margin;
+    transition:0.3s;
+    cursor: pointer;
+    font-size:1.4rem
+}
+
+.boughtgame-list .boughtgame-each-game:hover{
+    transform: scale(1.01);
+    transform: translateY(-1rem);
+    box-shadow:  1px 1px 9px black,
+    -1px -1px 9px #7e7676;
+}
+.boughtgame-img {
+    width: 100%;
+    // height: 100%
+    height:14rem
+}
+.boughtgame-img img {
+    width: 90%;
+    height: 100%;
+    box-shadow:  1px 1px 9px black,
+    -1px -1px 9px black;
+    border-radius:1rem
+}
+.boughtgame .boughtgame-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin:1rem 0
+}
+.boughtgame .boughtgame-content div {
+    margin-bottom: 0.8rem;
+}
+.boughtgame .boughtgame-content span{
+    color:#4f6772;
+    width:10.5rem;
+    display: inline-block;
+}

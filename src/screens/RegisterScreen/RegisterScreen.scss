@@ -1,0 +1,122 @@
+.register{
+    background:url("/assets/img/backgroundlogin.jpg") no-repeat;    
+    min-height: 100rem;         
+    background-size:cover;   
+    background-position:center;
+    color:white
+}
+.register-form{
+    display: grid;
+    justify-content:center;
+}
+.register .title-general{
+    text-align:center;
+}
+//input form
+.register-form label{
+    display:block;
+    color:#91adb4;
+    margin:1rem 0;
+    font-size: 1.8rem;
+}
+
+.register .user-label .user-box {
+    position: relative;
+    display: inline-block;
+}
+.register .user-label input {
+    color: white;
+    width: 30rem;
+    font-size: inherit;
+    font-family: inherit;
+    background-color: hsl(236, 32%, 26%);
+    padding: 0.35em 0.45em;
+    border: 1px solid transparent;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.register .user-label input:focus {
+    outline: none;
+}
+
+.register .user-label input::placeholder {
+    color: hsla(0, 0%, 100%, 0.6);
+}
+
+.register .user-label span {
+    position: absolute;
+    background-color: #d4d5d6;
+    transition: transform 0.1s ease;
+}
+
+.bottom,
+.top {
+    height: 1px;
+    left: 0;
+    right: 0;
+    transform: scaleX(0);
+}
+
+.left,
+.right {
+    width: 1px;
+    top: 0;
+    bottom: 0;
+    transform: scaleY(0);
+}
+
+.bottom {
+    bottom: 0;
+    transform-origin: bottom right;
+}
+
+.register .user-label input:focus ~ .bottom {
+    transform-origin: bottom left;
+    transform: scaleX(1);
+}
+
+.right {
+    right: 0;
+    transform-origin: top right;
+    transition-delay: 0.05s;
+}
+
+.register .user-label input:focus ~ .right {
+    transform-origin: bottom right;
+    transform: scaleY(1);
+}
+
+.top {
+    top: 0;
+    transform-origin: top left;
+    transition-delay: 0.15s;
+}
+
+.register .user-label input:focus ~ .top {
+    transform-origin: top right;
+    transform: scaleX(1);
+}
+
+.left {
+    left: 0;
+    transform-origin: bottom left;
+    transition-delay: 0.25s;
+}
+
+.register .user-label input:focus ~ .left {
+    transform-origin: top left;
+    transform: scaleY(1);
+}
+//
+
+
+
+.register-form button{
+    display:block;
+    margin:0 auto;
+    margin-top:3rem;
+    padding:1rem 2rem;
+    background-color:#39506d;
+    color:#c3e1f2
+}
+
